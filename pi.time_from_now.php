@@ -45,7 +45,7 @@ class Time_from_now {
 	{
     $this->EE =& get_instance();
     $modifier = ee()->TMPL->fetch_param('modifier');
-    $format = (ee()->TMPL->fetch_param('format')) ? ee()->TMPL->fetch_param('format') : '%Y-%m-%d %H:%i';    
+    $format = (ee()->TMPL->fetch_param('format')) ? ee()->TMPL->fetch_param('format') : '%Y-%m-%d %H:%i';
     $time = strtotime($modifier,ee()->localize->now);
     $this->return_data = ee()->localize->format_date($format, $time);
 	}
@@ -60,7 +60,7 @@ class Time_from_now {
 		ob_start();
 ?>
 
-{exp:time_from_now time_from_now="-7 days"}
+{exp:time_from_now modifier="-7 days"}
 
 <?php
 		$buffer = ob_get_contents();
