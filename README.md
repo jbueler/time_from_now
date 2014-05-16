@@ -3,7 +3,7 @@ Time From Now
 
 Time from now will let you add a string modifier to the current time and will return a datetime string in it's place. This would be useful for performing channel entries loops with the `start_on` and `stop_before` parameters.
 
-This will let you use dynamic dates in (situations where you may have had to enable PHP before.)[http://ellislab.com/expressionengine/user-guide/add-ons/channel/channel_entries.html#start-on]
+This will let you use dynamic dates in [situations where you may have had to enable PHP before.](http://ellislab.com/expressionengine/user-guide/add-ons/channel/channel_entries.html#start-on)
 
 
 	{exp:channel:entries
@@ -43,4 +43,4 @@ optional format string to change the datetime format returned. Default format is
 	{exp:time_from_now modifier="-8 years" format="%D, %F %d, %Y - %g:%i:%s"} 
 	{!-- returns a date formated like this "Tue, May 16, 2006 - 10:23:45" --}
 
-Date format strings should use the standard Date Variable Formating from the Expression Engine docs. You can find more examples in their docs (http://ellislab.com/expressionengine/user-guide/templates/date_variable_formatting.html)[http://ellislab.com/expressionengine/user-guide/templates/date_variable_formatting.html]
+Date format strings should use the standard Date Variable Formating from the Expression Engine docs. You can find more examples in their docs [http://ellislab.com/expressionengine/user-guide/templates/date_variable_formatting.html](http://ellislab.com/expressionengine/user-guide/templates/date_variable_formatting.html)
