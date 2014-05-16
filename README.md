@@ -3,6 +3,8 @@ Time From Now
 
 Time from now will let you add a string modifier to the current time and will return a datetime string in it's place. This would be useful for performing channel entries loops with the `start_on` and `stop_before` parameters.
 
+This will let you use dynamic dates in (situations where you may have had to enable PHP before.)[http://ellislab.com/expressionengine/user-guide/add-ons/channel/channel_entries.html#start-on]
+
 
 	{exp:channel:entries
 		channel="value"
